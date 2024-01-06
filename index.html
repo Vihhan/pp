@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presonal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+    	<div class="container">
+    		<nav><img src="logo.png" class="logo"> 
+    			<ul>
+    				<li><a href="#">Home</a></li>
+    				<li><a href="#">About</a></li>
+    				<li><a href="#">Services</a></li>
+    				<li><a href="#">Portfolio</a></li>
+    				<li><a href="#">Contact</a></li>
+    			</ul>
+    		</nav>
+    		<div class="header-text">
+    			<p>Web development</p>
+    			<h1>Hi, I'm <span>Abhishek</span><br>Raj from India</h1>
+    			</div>
+    		</div>
+    	</div>
+
+
+    			<div id="about">
+    			<div class="container">
+    			<div class="row">
+    			<div class="about-col-1">
+    				<img src="user.png">
+    				</div>
+    				<div class="about-col-2">
+    				<h1 class="sub-title">About me</h1>
+    				<p>As a Computer Science and Engineering (CSE) student, I'm a part of a dynamic and innovative field that blends computer science principles with engineering practices. My passion for technology, problem-solving, and creative thinking has led you to pursue a rewarding career in this rapidly evolving domain. Here's an overview of you as a CSE student:
+
+                    My curiosity about computers and their potential applications started at an early age, always eager to explore how software and hardware interact to create meaningful solutions. This fascination drove me to delve deeper into programming languages, data structures, algorithms, and computational theory, all of which form the foundation of my studies.</p>
+                    <div class="tab-titles">
+                    	<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    	<p class="tab-links" onclick="opentab('Expriences')">Expriences</p>
+                    	<p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    	<li><span>web development</span><br>web designer</li>
+                    	<li><span>UI/UX</span><br>desining web/app interface</li>
+                    	<li><span>App development</span><br>building android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expriences">
+                    <ul>
+                    	<li><span>2023 - current</span><br>web developing</li>
+                
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                    	<li><span>2023</span><br>btech from CV raman global university</li>
+                    	
+                    </ul>
+                </div>
+
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div id="Services">
+    	<div class="container">
+    		<h1 class="sub-title">My services</h1>
+    		<div class="services-list">
+    			<div>
+    				<i class="fas fa-code"></i>
+    				<h2> Web design</h2>
+    				<p>Web designing essentially involves working on every attribute of the website that people interact with, so that the website is simple and efficient.</p>
+    				<a href="#">learn more</a>
+
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+
+
+        <div id="Contact">
+        	<div class="container">
+        		<div class="row">
+        			<div class="contact-left">
+        				<h1 class="sub-title">contact me</h1>
+        				<p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+        				<p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+        				<div class="social-icon">
+        					<a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+        					<a href=""><i class="fab fa-twitter-square"></i></a>
+        					<a href=""><i class="fab fa-instagram"></i></a>
+        					<a href=""><i class="fab fa-linkedin"></i></a>
+        				
+        			</div>
+        			<div class="contact-right">
+        				<form>
+        					<input type="text" name="Name" placeholder="Your Name" required>
+        					<input type="email" name="email" placeholder="Your Email" required>
+        					<textarea name="Message" row="6" placeholder="Your Message">
+        						<button type="submit">Submit</button>
+        					</textarea> 
+        				</form>
+        			</div>
+        		</div>
+        		
+        	</div>
+        </div>
+
+
+
+
+
+
+        <script>
+
+    	var tablinks = document.getElementsByClassName("tab-links");
+    	var tabcontents = document.getElementsByClassName("tab-contents");
+
+    	function opentab(tabname){
+    		for(tablink of tablinks){
+    			tablink.classList.remove("active-link");
+    		}
+    		for(tabcontent of tabcontents){
+    			tabcontent.classList.remove("active-tab");
+    		}
+    		event.currentTarget.classList.add("active-link");
+    		document.getElementById(tabname).classList.add("active-tab");
+
+    	}
+
+
+    </script>
+
+</body>
+
+</html>
+
